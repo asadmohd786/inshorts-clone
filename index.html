@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React App</title>
+    <!--uses Font awsome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="nav">
+        <!--for  Opening hamburgerdrawer-->
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa-solid fa-bars" ></i></span>
+            <section id="title">
+                <img src="https://assets.inshorts.com/website_assets/images/logo_inshorts.png" alt="inshorts" id="image">
+            </section>
+        </div>
+        <!--for closing hamburgerdrawer-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h2>Categories</h2><hr>
+            <a onclick="click1()" href="#" id="business">business</a>
+            <a href="#" id="entertainment" onclick="category()">entertainment</a>
+            <a href="#" id="general">general</a>
+            <a href="#" id="health">health</a>
+            <a href="#" id="science">science</a>
+            <a href="#" id="sports">sports</a>
+            <a href="#" id="technology">technology</a>
+          </div>
+        </section>
+        <section id="modes">
+            <!--for dark modes-->
+            <button id="btn1" onclick="myFunc()">Dark Mode</button>
+        </section>       
+          
+          <div id="promotion">
+            <section id="para">
+            <p class="exp">For the best experience use Inshorts App on your smartphone</p>
+            </section>
+            <section id="apple">
+            <img src="https://assets.inshorts.com/website_assets/images/appstore.png" alt="appstore" id="appstore">
+            </section>
+            <section id="android">
+                <img src="https://assets.inshorts.com/website_assets/images/playstore.png" alt="playstore" id="playstore">
+            </section>
+            </div>
+           
+        <div id="main"></div>
+    <script src="script.js"></script>
+</body>
+</html>
